@@ -14,7 +14,7 @@ public enum FlipMode
 [ExecuteInEditMode]
 public class Book : MonoBehaviour {
     public Canvas canvas;
-  //  [SerializeField]
+    [SerializeField]
     RectTransform BookPanel;
     public Sprite background;
     public Sprite[] bookPages;
@@ -22,9 +22,6 @@ public class Book : MonoBehaviour {
     public bool enableShadowEffect=true;
     //represent the index of the sprite shown in the right page
     public int currentPage = 0;
-
-    public AutoFlip FlipScript;
-
     public int TotalPageCount
     {
         get { return bookPages.Length; }
@@ -448,8 +445,4 @@ public class Book : MonoBehaviour {
         if (onFinish != null)
             onFinish();
     }
-
-   
-
-
 }
