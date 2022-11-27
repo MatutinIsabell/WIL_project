@@ -352,7 +352,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1372344973}
         m_TargetAssemblyTypeName: AutoFlip, Assembly-CSharp
-        m_MethodName: FlipRightPage
+        m_MethodName: StartFlipping
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -514,6 +514,10 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 1494739754}
+    - target: {fileID: 11415212, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 3}
+      propertyPath: interactable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11415212, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 3}
       propertyPath: bookPages.Array.size
       value: 21
@@ -744,7 +748,6 @@ MonoBehaviour:
   AutoStartFlip: 0
   ControledBook: {fileID: 1372344974}
   AnimationFramesCount: 40
-  PageNumber: 3
 --- !u!114 &1372344974 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 11415212, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 3}

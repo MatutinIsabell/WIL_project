@@ -11,9 +11,7 @@ public class AutoFlip : MonoBehaviour {
     public int AnimationFramesCount = 40;
     bool isFlipping = false;
 
-    public float PageNumber;
-    bool isAtPage = true;
-   
+
 
     // Use this for initialization
     void Start () {
@@ -59,22 +57,7 @@ public class AutoFlip : MonoBehaviour {
         StartCoroutine(FlipLTR(xc, xl, h, frameTime, dx));
     }
 
-    public void StopAtPag()
-    {
-        // hERE i'M TRYING TO SET THE INTERACTABLE VARIABLE TO FALSE
-        ControledBook.interactable();
-        StartCoroutine(FlipToEnd());
-       
-
-        if (ControledBook.currentPage <= PageNumber)
-        {
-            AutoStartFlip = false;
-
-        }
-
-
-    }
-
+    
     IEnumerator FlipToEnd()
     {
         yield return new WaitForSeconds(DelayBeforeStarting);
