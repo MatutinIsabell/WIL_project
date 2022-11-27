@@ -5,15 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class PressButtontoMonth : MonoBehaviour
 {
-
-    public AutoFlip AutoFlip;
+    public AutoFlip autoFlip;
     public GameObject Page;
 
     public void TurnTo()
     {
-        
+
 
     }
 
-    
 }
