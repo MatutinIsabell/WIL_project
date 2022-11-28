@@ -369,6 +369,14 @@ public class Book : MonoBehaviour {
         LeftNext.sprite= (currentPage > 0 && currentPage <= bookPages.Length) ? bookPages[currentPage-1] : background;
         RightNext.sprite=(currentPage>=0 &&currentPage<bookPages.Length) ? bookPages[currentPage] : background;
     }
+
+    public void GotToPage14()
+    {
+        currentPage = 14;
+        UpdateSprites();
+    }
+
+
     public void TweenForward()
     {
         if(mode== FlipMode.RightToLeft)

@@ -10,6 +10,9 @@ public class AutoFlip : MonoBehaviour {
     public Book ControledBook;
     public int AnimationFramesCount = 40;
     bool isFlipping = false;
+
+    public int targetPage = 0;
+
     // Use this for initialization
     void Start () {
         if (!ControledBook)
@@ -26,6 +29,23 @@ public class AutoFlip : MonoBehaviour {
     {
         StartCoroutine(FlipToEnd());
     }
+
+    public void FLipToPage14()
+    {
+
+        targetPage = 14;
+        FLipToPage14();
+
+    }
+
+    public void FlipToTargetPage()
+    {
+        ControledBook.currentPage = targetPage - 2;
+        FLipToPage14();
+    }
+
+
+
     public void FlipRightPage()
     {
         if (isFlipping) return;
