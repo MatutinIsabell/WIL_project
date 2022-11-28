@@ -376,6 +376,11 @@ public class Book : MonoBehaviour {
         UpdateSprites();
     }
 
+    public void GotToPage4()
+    {
+        currentPage = 4;
+        UpdateSprites();
+    }
 
     public void TweenForward()
     {
