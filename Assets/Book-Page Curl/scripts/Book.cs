@@ -370,15 +370,15 @@ public class Book : MonoBehaviour {
         RightNext.sprite=(currentPage>=0 &&currentPage<bookPages.Length) ? bookPages[currentPage] : background;
     }
 
-    public void GotToPage14()
+    public void GotToPage8()
     {
-        currentPage = 14;
+        currentPage = 8;
         UpdateSprites();
     }
 
-    public void GotToPage4()
+    public void GotToPage20()
     {
-        currentPage = 4;
+        currentPage = 20;
         UpdateSprites();
     }
 
